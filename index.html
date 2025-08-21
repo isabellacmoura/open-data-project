@@ -1,40 +1,314 @@
-<!doctype html>
-<html lang="en">
-	<head>
-		<meta charset="utf-8" />
-		<link rel="icon" href="/open-data-project/favicon.png" />
-		<meta name="viewport" content="width=device-width, initial-scale=1" />
-		<link rel="preconnect" href="https://fonts.googleapis.com">
-		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-		<link href="https://fonts.googleapis.com/css2?family=Bai+Jamjuree:wght@300;400;500;600;700&display=swap" rel="stylesheet">
-		
-		<link rel="modulepreload" href="/open-data-project/_app/immutable/entry/start.bEseSEB5.js">
-		<link rel="modulepreload" href="/open-data-project/_app/immutable/chunks/CSj0VWgf.js">
-		<link rel="modulepreload" href="/open-data-project/_app/immutable/chunks/Ar7RCcFa.js">
-		<link rel="modulepreload" href="/open-data-project/_app/immutable/chunks/gEP5jy-j.js">
-		<link rel="modulepreload" href="/open-data-project/_app/immutable/entry/app.BOW_Fy_W.js">
-		<link rel="modulepreload" href="/open-data-project/_app/immutable/chunks/DsnmJJEf.js">
-		<link rel="modulepreload" href="/open-data-project/_app/immutable/chunks/DwxI3bpb.js">
-	</head>
-	<body data-sveltekit-preload-data="hover">
-		<div style="display: contents">
-			<script>
-				{
-					__sveltekit_1jjtk2a = {
-						base: "/open-data-project",
-						assets: "/open-data-project"
-					};
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pastas Centralizadas</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: white;
+            font-family: 'Courier New', 'Monaco', 'Consolas', monospace;
+        }
 
-					const element = document.currentScript.parentElement;
+        .container {
+            text-align: center;
+        }
 
-					Promise.all([
-						import("/open-data-project/_app/immutable/entry/start.bEseSEB5.js"),
-						import("/open-data-project/_app/immutable/entry/app.BOW_Fy_W.js")
-					]).then(([kit, app]) => {
-						kit.start(app, element);
-					});
-				}
-			</script>
-		</div>
-	</body>
+        .folders-container {
+            position: relative;
+            display: inline-block;
+        }
+
+        .folder-link {
+            position: absolute;
+            cursor: pointer;
+            transition: opacity 0.2s ease;
+        }
+
+        .folder-link:hover {
+            opacity: 0.8;
+        }
+
+        /* Posicionamento dos links sobre cada pasta */
+        .folder-1 {
+            left: 160px;
+            top: 320px;
+            width: 110px;
+            height: 63px;
+        }
+
+        .folder-2 {
+            left: 386px;
+            top: 294px;
+            width: 110px;
+            height: 63px;
+        }
+
+        .folder-3 {
+            left: 612px;
+            top: 320px;
+            width: 110px;
+            height: 63px;
+        }
+
+        .folder-tooltip {
+            position: absolute;
+            bottom: -25px;
+            left: 50%;
+            transform: translateX(-50%);
+            background: rgba(0, 0, 0, 0.8);
+            color: white;
+            padding: 4px 8px;
+            border-radius: 4px;
+            font-size: 12px;
+            opacity: 0;
+            transition: opacity 0.2s ease;
+            pointer-events: none;
+            white-space: nowrap;
+        }
+
+        .folder-link:hover .folder-tooltip {
+            opacity: 1;
+        }
+
+        /* Logo no canto superior esquerdo */
+        .logo-top-left {
+            position: fixed;
+            top: 20px;
+            left: 40px;
+            font-family: 'BaiJamjuree', sans-serif;
+            font-weight: 400;
+            font-size: 18px;
+            color: #000;
+            text-align: left;
+            line-height: 1.2;
+            z-index: 1000;
+        }
+
+        .logo-top-left .line1 {
+            display: block;
+            font-weight: 400;
+        }
+
+        .logo-top-left .line2 {
+            display: block;
+            font-weight: 700;
+        }
+
+        .logo-top-left .line3 {
+            display: block;
+            font-weight: 400;
+        }
+
+        /* Rodapé */
+        .footer {
+            position: fixed;
+            bottom: 20px;
+            left: 50%;
+            transform: translateX(-50%);
+            font-family: 'BaiJamjuree', sans-serif;
+            font-weight: 400;
+            font-size: 14px;
+            color: #000;
+            text-align: center;
+            line-height: 1.4;
+            z-index: 1000;
+        }
+
+        /* Menu no rodapé */
+        .footer-menu {
+            position: fixed;
+            bottom: 20px;
+            left: 40px;
+            font-family: 'BaiJamjuree', sans-serif;
+            font-weight: 400;
+            font-size: 14px;
+            color: #000;
+            text-align: left;
+            line-height: 1.4;
+            z-index: 1000;
+        }
+
+        .footer-menu a {
+            display: inline;
+            color: #000;
+            text-decoration: underline;
+            margin: 0 5px;
+            transition: opacity 0.2s ease;
+        }
+
+        .footer-menu a:hover {
+            opacity: 0.7;
+        }
+
+        /* Parágrafo explicativo no canto superior direito */
+        .explicacao {
+            position: fixed;
+            top: 20px;
+            right: 40px;
+            font-family: 'BaiJamjuree', sans-serif;
+            font-weight: 400;
+            font-size: 14px;
+            color: #000;
+            text-align: left;
+            line-height: 1.3;
+            z-index: 1000;
+            max-width: 400px;
+        }
+    </style>
+</head>
+<body>
+    <!-- Logo no canto superior esquerdo -->
+    <div class="logo-top-left">
+        <span class="line1">Dados</span>
+        <span class="line2">Abertos em</span>
+        <span class="line3">Portugal</span>
+    </div>
+
+    <!-- Rodapé -->
+    <div class="footer">
+        Projeto que incentiva o uso de dados abertos na<br>
+        cobertura de políticas públicas em Portugal
+    </div>
+
+    <!-- Menu no rodapé -->
+    <div class="footer-menu">
+        <a href="about-project.html">Sobre o projeto</a> / <a href="#referencias">Referências</a> / <a href="#contacto">Contacto</a>
+    </div>
+
+    <!-- Parágrafo explicativo no canto superior direito -->
+    <div class="explicacao">
+        Em <span style="background-color: #ffd65c;">pasta vazia</span> reunimos uma lista de datasets que apesar de serem de interesse público não estão disponíveis. Em <span style="background-color: #8980ff;">pasta protegida</span> mapeamos como cada município de Portugal disponibiliza dados. Em <span style="background-color: #9cce8e;">pasta partilhada</span> organizamos e divulgamos hackatons e workshops para obter dados públicos.
+    </div>
+
+    <div class="container">
+        <div class="folders-container">
+            <svg xmlns="http://www.w3.org/2000/svg" version="1.1" viewBox="0 0 600 400" width="900" height="600">
+              <!-- Generator: Adobe Illustrator 29.6.1, SVG Export Plug-In . SVG Version: 2.1.1 Build 9)  -->
+              <defs>
+                <style>
+                  .st0 {
+                    fill: #ffd65c;
+                  }
+
+                  .st1, .st2 {
+                    font-family: BaiJamjuree-SemiBold, 'Bai Jamjuree';
+                    font-weight: 600;
+                  }
+
+                  .st3 {
+                    font-size: 12px;
+                  }
+
+                  .st4 {
+                    fill: #a9a3ef;
+                  }
+
+                  .st5 {
+                    fill: #b2d3b2;
+                  }
+
+                  .st6 {
+                    fill: #bfbfbf;
+                    stroke: #000;
+                    stroke-miterlimit: 10;
+                    stroke-width: .25px;
+                  }
+
+                  .st6, .st7, .st8 {
+                    display: none;
+                  }
+                  
+                  /* Ocultar elementos que não devem aparecer */
+                  #Camada_2 {
+                    display: none;
+                  }
+
+                  .st7 {
+                    font-size: 6px;
+                  }
+
+                  .st9 {
+                    font-family: BaiJamjuree-Bold, 'Bai Jamjuree';
+                    font-weight: 700;
+                  }
+
+                  .st10 {
+                    fill: #9cce8e;
+                  }
+
+                  .st2 {
+                    font-size: 9.39px;
+                  }
+
+                  .st11 {
+                    fill: #ffe07f;
+                  }
+
+                  .st12 {
+                    fill: #8980ff;
+                  }
+                </style>
+              </defs>
+              <g id="Camada_1">
+                <path class="st0" d="M106.42,212.97v-6.92c0-4.62,1.22-6.92,3.65-6.92h21.89c1.22,0,2.43,1.15,3.65,3.46l5.47,10.39h41.96c2.43,0,3.65,2.31,3.65,6.92v34.62c0,4.62-1.22,6.92-3.65,6.92h-72.98c-2.43,0-3.65-2.31-3.65-6.92v-41.55Z"/>
+                <path class="st11" d="M106.42,212.97h34.67l-5.47-10.39c-1.22-2.31-2.43-3.46-3.65-3.46h-21.89c-2.43,0-3.65,2.31-3.65,6.92v6.92Z"/>
+                <path class="st12" d="M257.38,195.66v-6.92c0-4.62,1.22-6.92,3.65-6.92h21.89c1.22,0,2.43,1.15,3.65,3.46l5.47,10.39h41.96c2.43,0,3.65,2.31,3.65,6.92v34.62c0,4.62-1.22,6.92-3.65,6.92h-72.98c-2.43,0-3.65-2.31-3.65-6.92v-41.55Z"/>
+                <path class="st4" d="M257.38,195.66h34.67l-5.47-10.39c-1.22-2.31-2.43-3.46-3.65-3.46h-21.89c-2.43,0-3.65,2.31-3.65,6.92v6.92Z"/>
+                <path class="st10" d="M408.34,212.97v-6.92c0-4.62,1.22-6.92,3.65-6.92h21.89c1.22,0,2.43,1.15,3.65,3.46l5.47,10.39h41.96c2.43,0,3.65,2.31,3.65,6.92v34.62c0,4.62-1.22,6.92-3.65,6.92h-72.98c-2.43,0-3.65-2.31-3.65-6.92v-41.55Z"/>
+                <path class="st5" d="M408.34,212.97h34.67l-5.47-10.39c-1.22-2.31-2.43-3.46-3.65-3.46h-21.89c-2.43,0-3.65,2.31-3.65,6.92v6.92Z"/>
+                <rect class="st6" x="136.4" y="341.97" width="322.24" height="46.56"/>
+                <text class="st7" transform="translate(226.07 363.74)"><tspan class="st1"><tspan x="0" y="0">Projeto que incentiva o uso de dados abertos na </tspan></tspan><tspan class="st9"><tspan x="5.53" y="6">cobertura de políticas públicas em Portugal</tspan></tspan></text>
+              </g>
+              <g id="Camada_2" class="st8">
+                <text class="st3" transform="translate(17.14 27.24)"><tspan class="st1"><tspan x="0" y="0">Dados </tspan></tspan><tspan class="st9" x="0" y="11">Abertos </tspan><tspan class="st1" x="49.04" y="11">em </tspan><tspan class="st1"><tspan x="0" y="22">Portugal</tspan></tspan></text>
+              </g>
+              <g id="Camada_3">
+                <text class="st2" transform="translate(133.17 193.37) rotate(59.72)"><tspan x="0" y="0">vazia</tspan></text>
+                <text class="st2" transform="translate(106.42 196.07)"><tspan x="0" y="0">Pasta </tspan><tspan x="0" y="8.61" xml:space="preserve">      </tspan></text>
+                <text class="st2" transform="translate(292.04 192.93)"><tspan x="0" y="0" xml:space="preserve">Protegida      </tspan></text>
+                <text class="st2" transform="translate(443.48 210.62)"><tspan x="0" y="0" xml:space="preserve">Partilhada      </tspan></text>
+              </g>
+            </svg>
+
+            <!-- Links invisíveis sobre cada pasta -->
+            <a href="#pasta1" class="folder-link folder-1" onclick="abrirPasta('Pasta Vazia')">
+                <div class="folder-tooltip">Pasta Vazia</div>
+            </a>
+            
+            <a href="#pasta2" class="folder-link folder-2" onclick="abrirPasta('Pasta Protegida')">
+                <div class="folder-tooltip">Pasta Protegida</div>
+            </a>
+            
+            <a href="#pasta3" class="folder-link folder-3" onclick="abrirPasta('Pasta Partilhada')">
+                <div class="folder-tooltip">Pasta Partilhada</div>
+            </a>
+        </div>
+    </div>
+
+    <script>
+        function abrirPasta(nomePasta) {
+            // Aqui você pode definir o que acontece quando cada pasta é clicada
+            switch(nomePasta) {
+                case 'Pasta Vazia':
+                    window.location.href = 'pasta-vazia.html';
+                    break;
+                case 'Pasta Protegida':
+                    window.location.href = 'pasta-protegida.html';
+                    
+                    break;
+                case 'Pasta Partilhada':
+                    window.location.href = 'pasta-partilhada.html';
+                    break;
+               
+            }
+        }
+    </script>
+</body>
 </html>
