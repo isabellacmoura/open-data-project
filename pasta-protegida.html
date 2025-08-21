@@ -1,0 +1,278 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pasta Protegida - Dados Abertos em Portugal</title>
+    <script type="module" crossorigin src="index-38P9HOo-.js"></script>
+    <link rel="stylesheet" crossorigin href="index-DWDDSs2B.css">
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            background-color: white;
+            font-family: Arial, sans-serif;
+            color: black;
+            min-height: 100vh;
+            position: relative;
+            display: block !important;
+            place-items: initial !important;
+            transform: none !important;
+            overflow-x: hidden;
+        }
+
+        /* Logo no canto superior esquerdo */
+        .logo-top-left {
+            position: fixed !important;
+            top: 20px !important;
+            left: 40px !important;
+            font-family: 'BaiJamjuree', sans-serif;
+            font-weight: 400;
+            font-size: 18px;
+            color: #000;
+            text-align: left;
+            line-height: 1.2;
+            z-index: 9999 !important;
+            transform: none !important;
+            transition: none !important;
+        }
+
+        .logo-top-left .line1 {
+            display: block;
+            font-weight: 400;
+        }
+
+        .logo-top-left .line2 {
+            display: block;
+            font-weight: 700;
+        }
+
+        /* Garantir que o logo fique sempre fixo */
+        body .logo-top-left {
+            position: fixed !important;
+            top: 20px !important;
+            left: 40px !important;
+            z-index: 9999 !important;
+            transform: none !important;
+            transition: none !important;
+            will-change: auto !important;
+        }
+
+        /* Forçar o logo a ficar fixo mesmo com iframe */
+        html body .logo-top-left {
+            position: fixed !important;
+            top: 20px !important;
+            left: 40px !important;
+            z-index: 99999 !important;
+            transform: none !important;
+            transition: none !important;
+            will-change: auto !important;
+            pointer-events: auto !important;
+        }
+
+        /* Garantir que o iframe não interfira com elementos fixos */
+        iframe {
+            position: relative !important;
+            z-index: 1 !important;
+        }
+
+        /* Menu no rodapé */
+        .footer-menu {
+            position: fixed;
+            bottom: 20px;
+            left: 40px;
+            font-family: 'BaiJamjuree', sans-serif;
+            font-weight: 400;
+            font-size: 14px;
+            color: #000;
+            text-align: left;
+            line-height: 1.4;
+            z-index: 1000;
+        }
+
+        .footer-menu a {
+            display: inline;
+            color: #000;
+            text-decoration: underline;
+            margin: 0 5px;
+            transition: opacity 0.2s ease;
+        }
+
+        .footer-menu a:hover {
+            opacity: 0.7;
+        }
+
+        /* Rodapé */
+        .footer {
+            position: fixed;
+            bottom: 20px;
+            left: 50%;
+            transform: translateX(-50%);
+            font-family: 'BaiJamjuree', sans-serif;
+            font-weight: 400;
+            font-size: 14px;
+            color: #000;
+            text-align: center;
+            line-height: 1.4;
+            z-index: 1000;
+        }
+
+        /* Conteúdo principal */
+        .main-content {
+            padding: 80px 40px 100px 40px;
+            display: flex;
+            gap: 40px;
+            align-items: flex-start;
+        }
+
+        .content-section {
+            position: relative;
+            margin-bottom: 40px;
+            margin-top: 0;
+            flex-shrink: 0;
+        }
+
+        .folder-svg {
+            width: 400px;
+            height: 300px;
+            position: absolute;
+            left: 50px;
+            top: -198px;
+            z-index: 10;
+        }
+
+        .folder-svg a {
+            display: block;
+            transition: transform 0.2s ease;
+        }
+
+        .folder-svg a:hover {
+            transform: scale(1.05);
+        }
+
+        .text-container {
+            display: flex;
+            justify-content: flex-start;
+            margin-top: 20px;
+            margin-left: -18px;
+        }
+
+        .text-box {
+            padding: 15px;
+            max-width: 400px;
+            font-size: 14px;
+            line-height: 1.4;
+            font-family: Arial, sans-serif;
+            margin-top: 0;
+        }
+
+        .app-section {
+            flex: 2;
+            margin-top: 0;
+            margin-left: -40px;
+            position: relative;
+            z-index: 50;
+        }
+
+        .app-container {
+            background-color: transparent;
+            border: none;
+            border-radius: 0;
+            padding: 0;
+            margin: -68px 0 0 -160px;
+            max-width: none;
+            box-shadow: none;
+            overflow: hidden;
+            position: relative;
+            z-index: 100;
+            clip-path: inset(0 0 0 150px);
+        }
+
+        /* Override Svelte app styles */
+        #app {
+            max-width: none !important;
+            margin: 0 !important;
+            padding: 0 !important;
+            text-align: left !important;
+        }
+
+        #app .app-container {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 0;
+        }
+
+
+
+
+    </style>
+</head>
+<body>
+    <!-- Logo no canto superior esquerdo -->
+    <div class="logo-top-left">
+        <span class="line1">Dados</span>
+        <span class="line2">Abertos em</span>
+        <span class="line3">Portugal</span>
+    </div>
+
+    <!-- Menu no rodapé -->
+    <div class="footer-menu">
+        <a href="index.html">Voltar</a> / <a href="about-project.html">Sobre o projeto</a> / <a href="#referencias">Referências</a> / <a href="#contacto">Contacto</a>
+    </div>
+
+    <!-- Rodapé -->
+    <div class="footer">
+        Projeto que incentiva o uso de dados abertos na<br>
+        cobertura de políticas públicas em Portugal
+    </div>
+
+    <div class="main-content">
+        <div class="content-section">
+            <div class="folder-svg">
+                <a href="pasta-protegida.html" style="text-decoration: none; cursor: pointer;">
+                    <svg xmlns="http://www.w3.org/2000/svg" version="1.1" viewBox="0 0 600 400" width="400" height="300">
+                        <defs>
+                            <style>
+                                .st0 { fill: #8B5CF6; }
+                                .st11 { fill: #A78BFA; }
+                            </style>
+                        </defs>
+                        <g>
+                            <path class="st0" d="M106.42,212.97v-6.92c0-4.62,1.22-6.92,3.65-6.92h21.89c1.22,0,2.43,1.15,3.65,3.46l5.47,10.39h41.96c2.43,0,3.65,2.31,3.65,6.92v34.62c0,4.62-1.22,6.92-3.65,6.92h-72.98c-2.43,0-3.65-2.31-3.65-6.92v-41.55Z"/>
+                            <path class="st11" d="M106.42,212.97h34.67l-5.47-10.39c-1.22-2.31-2.43-3.46-3.65-3.46h-21.89c-2.43,0-3.65,2.31-3.65,6.92v6.92Z"/>
+                        </g>
+                    </svg>
+                </a>
+            </div>
+            <div class="text-container">
+                <div class="text-box">
+                    ========================<br>
+                    <span style="background-color: #8B5CF6; color: white; padding: 2px 4px;">Pasta protegida</span> é um projeto<br>
+                    que facilita o acesso à informação<br>
+                    sobre dados abertos nos municípios<br>
+                    portugueses e seus responsáveis<br>
+                    de acesso à informação<br>
+                    ========================
+                </div>
+            </div>
+        </div>
+
+        <div class="app-section">
+            <div class="app-container">
+                <iframe 
+                    src="app-svelte/app.html" 
+                    width="100%" 
+                    height="800px" 
+                    frameborder="0"
+                    style="border: none;"
+                    title="Dados Abertos em Portugal - App de Municípios">
+                </iframe>
+            </div>
+        </div>
+    </div>
+
+
+
+
+</body>
+</html>
