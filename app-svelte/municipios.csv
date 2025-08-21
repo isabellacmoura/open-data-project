@@ -1,0 +1,309 @@
+Distrito;MUNICIPIO;Website;RAI;PORTAL;RAI_Nome;RAI_Email;RAI_Cargo;Portal
+AÇORES;Angra do Heroísmo;https://angradoheroismo.pt/;SIM;NAO;Maria Isabel de Melo Correia;mcorreia@cmah.pt;Jurista;NAO
+AÇORES;Calheta (Açores);http://www.cm-calheta.pt;NAO;NAO;;;;NAO
+AÇORES;Corvo;http://www.cm-corvo.pt;NAO;NAO;;;;NAO
+AÇORES;Horta;http://www.cmhorta.pt;NAO;NAO;;;;NAO
+AÇORES;Lagoa (Açores);http://www.lagoa-acores.pt;SIM;NAO;Andreia de Morais Lobo Delfim;silvina.rocha@lagoa-acores.pt;Chefe de Divisão de Gestão Urbana e de Infraestruturas;NAO
+AÇORES;Lajes das Flores;http://www.cmlajesdasflores.pt/;NAO;NAO;;;;NAO
+AÇORES;Lajes do Pico;http://www.cm-lajesdopico.pt/;NAO;NAO;;;;NAO
+AÇORES;Madalena;http://www.cm-madalena.pt;NAO;NAO;;;;NAO
+AÇORES;Nordeste;http://www.cmnordeste.pt;SIM;NAO;Rafael Moniz Vieira;apoiopresidencia@cmnordeste.pt;Secretário do Presidente da Câmara Municipal do Nordeste;NAO
+AÇORES;Ponta Delgada;www.cm-pontadelgada.pt;SIM;NAO;João Nuno Borba Vieira de Almeida e Sousa;joaonuno@mpdelgada.pt;Diretor do Departamento de Gestão Administrativa Recursos Humanos e Modernização;NAO
+AÇORES;Povoação;http://www.cm-povoacao.pt;NAO;NAO;;;;NAO
+AÇORES;Praia da Vitória;http://www.cmpv.pt;NAO;NAO;;;;NAO
+AÇORES;Ribeira Grande;http://www.cm-ribeiragrande.pt;SIM;NAO;Maria Filomena Fonseca da Cruz Pinge;filomenapinge@cm-ribeiragrande.pt;Chefe da Divisão Administrativa e de Apoio Jurídico;NAO
+AÇORES;Santa Cruz da Graciosa;http://www.cm-graciosa.pt;NAO;NAO;;;;NAO
+AÇORES;Santa Cruz das Flores;http://cm-santacruzdasflores.azoresdigital.pt;NAO;NAO;;;;NAO
+AÇORES;São Roque do Pico;http://cm-saoroquedopico.pt/;NAO;NAO;;;;NAO
+AÇORES;Velas;http://cmvelas.pt;NAO;NAO;;;;NAO
+AÇORES;Vila do Porto;http://www.cm-viladoporto.pt;NAO;NAO;;;;NAO
+AÇORES;Vila Franca do Campo;http://www.cmvfc.pt;NAO;NAO;;;;NAO
+ALGARVE;Castro Marim;http://www.cm-castromarim.pt;SIM;NAO;Ana Teresa Roberto Palma Guerreiro;ana.guerreiro@cm-castromarim.pt;Técnica Superior - Jurista;NAO
+ALMADA;Barreiro;http://www.cm-barreiro.pt;SIM;NAO;Maria Beatriz Anastácio Ganhão;rai@cm-barreiro.pt;Técnica Superior Jurista;NAO
+AVEIRO;Águeda;http://www.cm-agueda.pt;SIM;https://i4c.cm-agueda.pt/;Mariana Nogueira de Almeida Pereira;cada@cm-agueda.pt;Técnica Superior;https://opendata.cm-agueda.pt
+AVEIRO;Albergaria-a-Velha;http://www.cm-albergaria.pt;NAO;NAO;;;;NAO
+AVEIRO;Anadia;http://www.cm-anadia.pt/;NAO;NAO;;;;NAO
+AVEIRO;Arouca;https://www.cm-arouca.pt/;NAO;NAO;;;;NAO
+AVEIRO;Aveiro;http://www.cm-aveiro.pt;SIM;NAO;Maria João Fernandes Moreto;mmoreto@cm-aveiro.pt;Chefe da Divisão de Atendimento ao Público e Apoio aos Eleitos Locais (DAPAEL);NAO
+AVEIRO;Castelo de Paiva;http://www.cm-castelo-paiva.pt;NAO;NAO;;;;NAO
+AVEIRO;Espinho;https://portal.cm-espinho.pt/;NAO;NAO;;;;NAO
+AVEIRO;Estarreja;http://www.cm-estarreja.pt;NAO;NAO;;;;NAO
+AVEIRO;Ílhavo;http://www.cm-ilhavo.pt;NAO;NAO;;;;NAO
+AVEIRO;Mealhada;http://www.cm-mealhada.pt;NAO;NAO;;;;NAO
+AVEIRO;Murtosa;http://www.cm-murtosa.pt;NAO;NAO;;;;NAO
+AVEIRO;Oliveira de Azeméis;http://www.cm-oaz.pt;NAO;NAO;;;;NAO
+AVEIRO;Oliveira do Bairro;http://www.cm-olb.pt/;SIM;NAO;Miguel Duarte;jduarte@cm-olb.pt;Técnico Superior;NAO
+AVEIRO;Ovar;http://www.cm-ovar.pt;SIM;NAO;Susana Cristina Teixeira Pinto;susana.pinto@cm-ovar.pt;Diretora do Departamento Administrativo, Jurídico e Financeiro;NAO
+AVEIRO;Santa Maria da Feira;http://www.cm-feira.pt;SIM;NAO;Joaquim de Oliveira Coelho;joaquim.coelho@cm-feira.pt;Diretor de Departamento;NAO
+AVEIRO;São João da Madeira;http://www.cm-sjm.pt;SIM;NAO;Ana Paula da Conceição Andrade Azevedo;paulaazevedo@cm-sjm.pt;Chefe de Divisão Sistemas de Informação e Modernização Administrativa;NAO
+AVEIRO;Sever do Vouga;http://www.cm-sever.pt;NAO;NAO;;;;NAO
+AVEIRO;Vagos;http://www.cm-vagos.pt;NAO;NAO;;;;NAO
+AVEIRO;Vale de Cambra;http://www.cm-valedecambra.pt;NAO;NAO;;;;NAO
+BEJA;Aljustrel;http://www.mun-aljustrel.pt;NAO;NAO;;;;NAO
+BEJA;Almodôvar;http://www.cm-almodovar.pt;NAO;NAO;;;;NAO
+BEJA;Alvito;http://www.cm-alvito.pt;NAO;NAO;;;;NAO
+BEJA;Barrancos;http://www.cm-barrancos.pt;NAO;NAO;;;;NAO
+BEJA;Beja;http://www.cm-beja.pt;NAO;NAO;;;;NAO
+BEJA;Castro Verde;http://www.cm-castroverde.pt;NAO;NAO;;;;NAO
+BEJA;Cuba;http://www.cm-cuba.pt;NAO;NAO;;;;NAO
+BEJA;Ferreira do Alentejo;http://www.cm-ferreira-alentejo.pt;SIM;NAO;ALBANO ROCHA FIALHO;albfialho@cm-ferreira-alentejo.pt;Chefe de serviço Jurídico e Institucional;NAO
+BEJA;Mértola;http://www.cm-mertola.pt;NAO;NAO;;;;NAO
+BEJA;Odemira;http://www.cm-odemira.pt;SIM;NAO;Ana Filipa Guerreiro Nunes dos Santos;ana.santos@cm-odemira.pt;Técnica Superior na Divisão de Sistemas de Informação e Atendimento;NAO
+BEJA;Ourique;http://www.cm-ourique.pt;NAO;NAO;;;;NAO
+BEJA;Serpa;http://www.cm-serpa.pt;SIM;NAO;Alzira dos Santos Baixinho Pé-Leve Figueira;afigueira@cm-serpa.pt;Técnica Superior de Direito;NAO
+BRAGA;Amares;http://www.cm-amares.pt;NAO;NAO;;;;NAO
+BRAGA;Barcelos;http://www.cm-barcelos.pt;SIM;NAO;Célia Andreia Santos Ribeiro;celiaribeiro@cm-barcelos.pt;Técnica Superior;NAO
+BRAGA;Braga;http://www.cm-braga.pt;SIM;NAO;Liliana Cristina da Silva Veiga;liliana.veiga@cm-braga.pt;Diretora de Departamento de Apoio ao Cidadão;NAO
+BRAGA;Cabeceiras de Basto;http://www.cabeceirasdebasto.pt;SIM;NAO;Teresa Luisa Rio Tinto Vidinha Pacheco;tvidinha@cabeceirasdebasto.pt;Técnica Superior Jurista;NAO
+BRAGA;Celorico de Basto;http://www.mun-celoricodebasto.pt/;NAO;NAO;;;;NAO
+BRAGA;Esposende;http://www.cm-esposende.pt;NAO;NAO;;;;NAO
+BRAGA;Fafe;http://www.cm-fafe.pt;SIM;NAO;José Augusto Gonçalves Ferreira;jose.ferreira@cm-fafe.pt;Chefe da Divisão Administrativa, Jurídica e de Contencioso;NAO
+BRAGA;Guimarães;http://www.cm-guimaraes.pt;SIM;NAO;Maria do Carmo Pereira Marques Martins;carmo.martins@cm-guimaraes.pt;Chefe de Divisão de Atendimento e Apoio ao Munícipe;NAO
+BRAGA;Póvoa de Lanhoso;http://www.mun-planhoso.pt/;SIM;NAO;Juliana Rodrigues da Silva;juliana.silva@mun-planhoso.pt;Técnica Superior na Divisão de Gestão Administrativa;NAO
+BRAGA;Terras de Bouro;http://www.cm-terrasdebouro.pt;NAO;NAO;;;;NAO
+BRAGA;Vieira do Minho;http://www.cm-vminho.pt;SIM;NAO;Maria Isilda Martins Domingues;idomingues@cm-vminho.pt;Chefe da Disisão de Administração;NAO
+BRAGA;Vila Nova de Famalicão;http://www.vilanovadefamalicao.org;SIM;NAO;Telma de Jesus Gomes da Silva;telmasilva@famalicão.pt;Coordenadora do Serviço de Atendimento Municipal;NAO
+BRAGA;Vila Verde;http://www.cm-vilaverde.pt;NAO;NAO;;;;NAO
+BRAGA;Vizela;http://www.cm-vizela.pt;NAO;NAO;;;;NAO
+BRAGANÇA;Alfândega da Fé;http://www.cm-alfandegadafe.pt;NAO;NAO;;;;NAO
+BRAGANÇA;Bragança;http://www.cm-braganca.pt;NAO;NAO;;;;NAO
+BRAGANÇA;Carrazeda de Ansiães;http://www.cm-carrazedadeansiaes.pt;NAO;NAO;;;;NAO
+BRAGANÇA;Freixo de Espada à Cinta;http://www.cm-freixoespadacinta.pt;NAO;NAO;;;;NAO
+BRAGANÇA;Macedo de Cavaleiros;http://www.cm-macedodecavaleiros.pt;NAO;NAO;;;;NAO
+BRAGANÇA;Miranda do Douro;http://www.cm-mdouro.pt/;NAO;NAO;;;;NAO
+BRAGANÇA;Mirandela;http://www.cm-mirandela.pt;SIM;NAO;Esmeralda Emília Rebelo Fidalgo Pinto;esmeralda.pinto@cm-mirandela.pt;Técnica Superior Jurista;NAO
+BRAGANÇA;Mogadouro;http://mogadouro.pt/;SIM;NAO;Ana Teresa Rodrigues Moura;solicitadoria@mogadouro.pt;Técnica Superior;NAO
+BRAGANÇA;Torre de Moncorvo;http://www.torredemoncorvo.pt;NAO;NAO;;;;NAO
+BRAGANÇA;Vila Flor;http://www.cm-vilaflor.pt;SIM;NAO;Cristina Moutinho;cristinamoutinho@cm-vilaflor.pt;Chefe de Unidade Orgânica de 3 grau -Qualidade;NAO
+BRAGANÇA;Vimioso;http://www.cm-vimioso.pt;NAO;NAO;;;;NAO
+BRAGANÇA;Vinhais;http://www.cm-vinhais.pt;NAO;NAO;;;;NAO
+CASTELO BRANCO;Belmonte;http://www.cm-belmonte.pt;NAO;NAO;;;;NAO
+CASTELO BRANCO;Castelo Branco;https://www.cm-castelobranco.pt/;SIM;NAO;Roberto António Reixa Nabais;roberto.nabais@cm-castelobranco.pt;Técnico Superior;NAO
+CASTELO BRANCO;Covilhã;http://www.cm-covilha.pt;SIM;NAO;Hélio Jorge Simões Fazendeiro;helio.fazendeiro@cm-covilha.pt;Chefe do Gabinete do Senhor Presidente da Câmara;NAO
+CASTELO BRANCO;Fundão;http://www.cm-fundao.pt;NAO;NAO;;;;NAO
+CASTELO BRANCO;Golegã;http://www.cm-golega.pt;NAO;NAO;;;;NAO
+CASTELO BRANCO;Idanha-a-Nova;http://www.cm-idanhanova.pt;NAO;NAO;;;;NAO
+CASTELO BRANCO;Oleiros;http://www.cm-oleiros.pt/;NAO;NAO;;;;NAO
+CASTELO BRANCO;Penamacor;http://www.cm-penamacor.pt;NAO;NAO;;;;NAO
+CASTELO BRANCO;Proença-a-Nova;http://www.cm-proencanova.pt;SIM;NAO;Ana Luísa Agostinho Ribeiro;geral@cm-proencanova.pt;Jurista (Técnica Superior na Unidade Jurídica);NAO
+CASTELO BRANCO;Sertã;http://www.cm-serta.pt;NAO;NAO;;;;NAO
+CASTELO BRANCO;Vila de Rei;http://www.cm-viladerei.pt;NAO;NAO;;;;NAO
+CASTELO BRANCO;Vila Velha de Ródão;http://www.cm-vvrodao.pt;NAO;NAO;;;;NAO
+COIMBRA;Arganil;http://www.cm-arganil.pt;NAO;NAO;;;;NAO
+COIMBRA;Cantanhede;http://www.cantanhedeonline.pt;NAO;NAO;;;;NAO
+COIMBRA;Coimbra;http://www.cm-coimbra.pt;SIM;NAO;Manuel Gilberto Mendes Lopes;gilberto.lopes@cm-coimbra.pt;Diretor do Departamento de Administração Geral (DAG);NAO
+COIMBRA;Condeixa-a-Nova;http://www.cm-condeixa.pt;NAO;NAO;;;;NAO
+COIMBRA;Figueira da Foz;https://www.cm-figfoz.pt/;SIM;NAO;Maria do Rosário Costa Pimentel Falcão Ferreira;presidencia@cm-figfoz.pt;Secretária do Gabinete de Apoio à Presidência;NAO
+COIMBRA;Góis;http://www.cm-gois.pt;NAO;NAO;;;;NAO
+COIMBRA;Lousã;http://www.cm-lousa.pt;NAO;NAO;;;;NAO
+COIMBRA;Mira;http://www.cm-mira.pt;NAO;NAO;;;;NAO
+COIMBRA;Miranda do Corvo;http://www.cm-mirandadocorvo.pt;NAO;NAO;;;;NAO
+COIMBRA;Montemor-o-Velho;http://www.cm-montemorvelho.pt;NAO;NAO;;;;NAO
+COIMBRA;Oliveira do Hospital;http://www.cm-oliveiradohospital.pt;NAO;NAO;;;;NAO
+COIMBRA;Pampilhosa da Serra;http://www.cm-pampilhosadaserra.pt;NAO;NAO;;;;NAO
+COIMBRA;Penacova;http://www.cm-penacova.pt;NAO;NAO;;;;NAO
+COIMBRA;Penela;http://www.cm-penela.pt;SIM;NAO;Francisco Miguel Marreco Gouveia;francisco.gouveia@cm-penela.pt;Chefe de Divisão da Divisão de Administração Geral;NAO
+COIMBRA;Soure;http://www.cm-soure.pt;NAO;NAO;;;;NAO
+COIMBRA;Tábua;http://www.cm-tabua.pt;NAO;NAO;;;;NAO
+COIMBRA;Vila Nova de Poiares;http://www.cm-vilanovadepoiares.pt;NAO;NAO;;;;NAO
+ÉVORA;Alandroal;http://www.cm-alandroal.pt;NAO;NAO;;;;NAO
+ÉVORA;Arraiolos;http://www.cm-arraiolos.pt;NAO;NAO;;;;NAO
+ÉVORA;Borba;http://www.cm-borba.pt;NAO;NAO;;;;NAO
+ÉVORA;Estremoz;http://www.cm-estremoz.pt;NAO;NAO;;;;NAO
+ÉVORA;Évora;http://www.cm-evora.pt;NAO;NAO;;;;NAO
+ÉVORA;Montemor-o-Novo;http://www.cm-montemornovo.pt;NAO;NAO;;;;NAO
+ÉVORA;Mora;http://www.cm-mora.pt;NAO;NAO;;;;NAO
+ÉVORA;Moura;http://www.cm-moura.pt;SIM;NAO;Octávio Rui Franco Patrício;rai@cm-moura.pt;Técnico Superior de Arquivo;NAO
+ÉVORA;Mourão;http://www.cm-mourao.pt;NAO;NAO;;;;NAO
+ÉVORA;Portel;http://www.cm-portel.pt;SIM;NAO;Rui Miguel Colaço Caeiro;rui.caeiro@portel.pt;Assistente Social;NAO
+ÉVORA;Redondo;http://www.cm-redondo.pt;NAO;NAO;;;;NAO
+ÉVORA;Reguengos de Monsaraz;http://www.cm-reguengos-monsaraz.pt;NAO;NAO;;;;NAO
+ÉVORA;Vendas Novas;http://www.cm-vendasnovas.pt;NAO;NAO;;;;NAO
+ÉVORA;Viana do Alentejo;http://www.cm-vianadoalentejo.pt;NAO;NAO;;;;NAO
+ÉVORA;Vidigueira;http://www.cm-vidigueira.pt;NAO;NAO;;;;NAO
+ÉVORA;Vila Viçosa;http://www.cm-vilavicosa.pt;SIM;NAO;Artur Jorge Lopes Rosado;rai@cm-vilavicosa.pt;Técnico Superior (Jurista);NAO
+FARO;Albufeira;http://www.cm-albufeira.pt;SIM;NAO;Joana Filipa Ramos Pinto / Pedro Manuel dos Santos Guerreiro Rodrigues;joana.pinto@cm-albufeira.pt / pedro.rodrigues@cm-albufeira.pt;Técnica/o superior de direito;NAO
+FARO;Alcoutim;http://www.cm-alcoutim.pt;NAO;NAO;;;;NAO
+FARO;Aljezur;http://www.cm-aljezur.pt;SIM;NAO;Marta Beatriz de Bragança dos Santos Viana Pinheiro Ferreira da Costa;RAI@cm-aljezur.pt;Jurista na Divisão de Contencioso e Assessoria Jurídica;NAO
+FARO;Faro;http://www.cm-faro.pt;SIM;NAO;José Maurício;jmauricio@cm-faro.pt;Chefe de Divisão de Assessoria Jurídica e Contencioso;NAO
+FARO;Lagoa;http://www.cm-lagoa.pt/;SIM;NAO;João Caetano;joao.caetano@cm-lagoa.pt;Técnico Superior;NAO
+FARO;Lagos;http://www.cm-lagos.pt;NAO;NAO;;;;NAO
+FARO;Loulé;http://www.cm-loule.pt;NAO;NAO;;;;NAO
+FARO;Monchique;https://cm-monchique.pt/;SIM;NAO;Inês Luz;juridico@cm-monchique.pt;Técnica superior Direito - Jurista;NAO
+FARO;Olhão;http://www.cm-olhao.pt;NAO;NAO;;;;NAO
+FARO;Portimão;http://www.cm-portimao.pt;SIM;NAO;Sílvia da Luz Silvestre Rosário Duarte;silvia.duarte@cm-portimao.pt;Chefe da Divisão Administrativa;NAO
+FARO;São Brás de Alportel;http://www.cm-sbras.pt;SIM;NAO;Maria Custódia Brás dos Reis;custodia.reis@cm-sbras.pt;Secretária da Vereação;NAO
+FARO;Silves;http://www.cm-silves.pt;NAO;NAO;;;;NAO
+FARO;Tavira;http://www.cm-tavira.pt;SIM;NAO;Cláudia Rosa dos Santos;mjesus@cm-tavira.pt;Chefe da Divisão de Administração e Programação de Investimentos;NAO
+FARO;Vila do Bispo;http://www.cm-viladobispo.pt;NAO;NAO;;;;NAO
+FARO;Vila Real de Santo António;http://www.cm-vrsa.pt;NAO;NAO;;;;NAO
+GUARDA;Aguiar da Beira;http://www.cm-aguiardabeira.pt;NAO;NAO;;;;NAO
+GUARDA;Almeida;http://www.cm-almeida.pt;NAO;NAO;;;;NAO
+GUARDA;Celorico da Beira;http://www.cm-celoricodabeira.pt;SIM;NAO;Joana de Fátima Marques Mendes Felix;joanafelix@cm-celoricodabeira.pt;Chefe da Divisão Administrativa e Sócio Cultural;NAO
+GUARDA;Figueira de Castelo Rodrigo;http://www.cm-fcr.pt;NAO;NAO;;;;NAO
+GUARDA;Fornos de Algodres;http://www.cm-fornosdealgodres.pt;NAO;NAO;;;;NAO
+GUARDA;Gouveia;http://www.cm-gouveia.pt;SIM;NAO;António Manuel Monteiro Mendes;aprovisionamento@cm-gouveia.pt;Chefe de Divisão;NAO
+GUARDA;Guarda;http://www.mun-guarda.pt;NAO;NAO;;;;NAO
+GUARDA;Manteigas;http://www.cm-manteigas.pt;NAO;NAO;;;;NAO
+GUARDA;Mêda;http://www.cm-meda.pt;SIM;NAO;Susana Maria Borrego Silva;susanaborrego@cm-meda.pt;Assistente Técnica do gabinete de apoio aos órgãos autárquicos;NAO
+GUARDA;Pinhel;http://www.cm-pinhel.pt;NAO;NAO;;;;NAO
+GUARDA;Sabugal;http://www.cm-sabugal.pt;NAO;NAO;;;;NAO
+GUARDA;Seia;http://www.cm-seia.pt;NAO;NAO;;;;NAO
+GUARDA;Trancoso;http://www.cm-trancoso.pt;NAO;NAO;;;;NAO
+GUARDA;Vila Nova de Foz Côa;http://www.cm-fozcoa.pt;NAO;NAO;;;;NAO
+LEIRIA;Alcobaça;http://www.cm-alcobaca.pt;SIM;NAO;Maria Helena Martins de Figueiredo Barbosa;helena.barbosa@cm-alcobaca.pt;Chefe da Divisão de Modernização Administrativa, em regime de substituição;NAO
+LEIRIA;Alvaiázere;http://www.cm-alvaiazere.pt;NAO;NAO;;;;NAO
+LEIRIA;Ansião;http://www.cm-ansiao.pt;NAO;NAO;;;;NAO
+LEIRIA;Batalha;http://www.cm-batalha.pt;NAO;NAO;;;;NAO
+LEIRIA;Bombarral;http://www.cm-bombarral.pt/;NAO;NAO;;;;NAO
+LEIRIA;Caldas da Rainha;http://www.cm-caldas-rainha.pt;NAO;NAO;;;;NAO
+LEIRIA;Castanheira de Pêra;http://www.cm-castanheiradepera.pt;NAO;NAO;;;;NAO
+LEIRIA;Figueiró dos Vinhos;http://www.cm-figueirodosvinhos.pt;NAO;NAO;;;;NAO
+LEIRIA;Leiria;http://www.cm-leiria.pt;NAO;NAO;;;;NAO
+LEIRIA;Marinha Grande;https://www.cm-mgrande.pt;NAO;NAO;;;;NAO
+LEIRIA;Nazaré;http://www.cm-nazare.pt/pt;NAO;NAO;;;;NAO
+LEIRIA;Óbidos;http://www.cm-obidos.pt;SIM;NAO;João Frade;joao.frade@cm-obidos.pt;Técnico Superior - Jurista - Gabinete Jurídico;NAO
+LEIRIA;Pedrógão Grande;http://www.cm-pedrogaogrande.pt;NAO;NAO;;;;NAO
+LEIRIA;Peniche;http://www.cm-peniche.pt;SIM;NAO;Tânia Isabel Santos Neves;tania.neves@cm-peniche.pt;Técnica superior;NAO
+LEIRIA;Pombal;http://www.cm-pombal.pt;NAO;NAO;;;;NAO
+LEIRIA;Porto de Mós;http://www.municipio-portodemos.pt;NAO;NAO;;;;NAO
+LISBOA;Alenquer;http://www.cm-alenquer.pt;SIM;NAO;Marta Sofia Teixeira da Silva;marta.silva@cm-alenquer.pt;Técnica Superior de Administração Pública e Autárquica;NAO
+LISBOA;Amadora;http://www.cm-amadora.pt;SIM;NAO;Maria João Torrão Pão-Mole;maria.pao-mole@cm-amadora.pt;Técnico Superior;NAO
+LISBOA;Arruda dos Vinhos;http://www.cm-arruda.pt;NAO;NAO;;;;NAO
+LISBOA;Azambuja;http://www.cm-azambuja.pt;NAO;NAO;;;;NAO
+LISBOA;Cadaval;http://www.cm-cadaval.pt;NAO;NAO;;;;NAO
+LISBOA;Cascais;http://www.cm-cascais.pt;NAO;https://data.cascais.pt/;;;;https://dados.cm-cascais.pt
+LISBOA;Lisboa;https://www.lisboa.pt/;SIM;https://lisboaaberta.cm-lisboa.pt;Leonor Gaspar Pinto;leonor.g.pinto@cm-lisboa.pt;Chefe da Divisão de Transparência Administrativa e Prestação de Contas;https://lisboaaberta.cm-lisboa.pt
+LISBOA;Loures;http://www.cm-loures.pt;SIM;NAO;Silvia Costa Jorge;rai@cm-loures.pt;Técnica superior;NAO
+LISBOA;Lourinhã;https://cm-lourinha.pt/;NAO;NAO;;;;NAO
+LISBOA;Mafra;http://www.cm-mafra.pt;NAO;NAO;;;;NAO
+LISBOA;Odivelas;http://www.cm-odivelas.pt;SIM;NAO;Carla Rosinhas;Carla.Rosinhas@cm-odivelas.pt;Chefe da Divisão Jurídica e de Organização Municipal;NAO
+LISBOA;Oeiras;http://www.cm-oeiras.pt;SIM;https://oeirasinterativa.oeiras.pt/dadosabertos/;Vera Lúcia da Rocha Ferreira de Carvalho de Ascensão;vera.carvalho@oeiras.pt;Chefe de Divisão;https://dadosabertos.cm-oeiras.pt
+LISBOA;Sintra;http://www.cm-sintra.pt;NAO;NAO;;;;NAO
+LISBOA;Sobral de Monte Agraço;http://www.cm-sobral.pt;NAO;NAO;;;;NAO
+LISBOA;Torres Vedras;http://www.cm-tvedras.pt;NAO;NAO;;;;NAO
+LISBOA;Vila Franca de Xira;http://www.cm-vfxira.pt;SIM;NAO;Ana Margarida Sousa;anam.sousa@cm-vfxira.pt;Técnica Superior;NAO
+MADEIRA;Calheta (Madeira);http://www.cmcalheta.pt;NAO;NAO;;;;NAO
+MADEIRA;Câmara de Lobos;http://www.cm-camaradelobos.pt;NAO;NAO;;;;NAO
+MADEIRA;Funchal;http://www.cm-funchal.pt;SIM;NAO;Sérgio Miguel Gonçalves Delgado;sergio.delgado@funchal.pt;Chefe de Divisão de Estudos e Regulamentação Municipal;NAO
+MADEIRA;Machico;http://www.cm-machico.pt;NAO;NAO;;;;NAO
+MADEIRA;Ponta do Sol;http://www.cm-pontadosol.pt/;NAO;NAO;;;;NAO
+MADEIRA;Porto Moniz;http://www.portomoniz.pt;SIM;NAO;Maria Jóse Teixeira Agrela;gabintejuridico@portomoniz.pt;Técnica superior - jurista;NAO
+MADEIRA;Porto Santo;http://www.cm-portosanto.pt;NAO;NAO;;;;NAO
+MADEIRA;Ribeira Brava;http://www.cm-ribeirabrava.pt;SIM;NAO;José Paulo Rodrigues Fernandes;rai@cm-ribeirabrava.pt;Técnico Superior - Gabinete Jurídico, Contencioso, Contraordenações e Execuções Fiscais;NAO
+MADEIRA;Santa Cruz;http://www.cm-santacruz.pt;NAO;NAO;;;;NAO
+MADEIRA;Santana;http://www.cm-santana.com;NAO;NAO;;;;NAO
+MADEIRA;São Vicente;http://www.cm-saovicente.pt/;NAO;NAO;;;;NAO
+MESÃO FRIO;Mesão Frio;http://www.cm-mesaofrio.pt;NAO;NAO;;;;NAO
+PORTALEGRE;Alter do Chão;http://www.cm-alter-chao.pt;NAO;NAO;;;;NAO
+PORTALEGRE;Arronches;http://www.cm-arronches.pt;NAO;NAO;;;;NAO
+PORTALEGRE;Avis;https://www.cm-avis.pt;NAO;NAO;;;;NAO
+PORTALEGRE;Campo Maior;http://www.cm-campo-maior.pt/;NAO;NAO;;;;NAO
+PORTALEGRE;Castelo de Vide;http://www.cm-castelo-vide.pt;NAO;NAO;;;;NAO
+PORTALEGRE;Crato;http://www.cm-crato.pt;NAO;NAO;;;;NAO
+PORTALEGRE;Elvas;https://www.cm-elvas.pt/;NAO;NAO;;;;NAO
+PORTALEGRE;Fronteira;http://www.cm-fronteira.pt;NAO;NAO;;;;NAO
+PORTALEGRE;Gavião;http://www.cm-gaviao.pt;NAO;NAO;;;;NAO
+PORTALEGRE;Marvão;http://www.cm-marvao.pt;SIM;NAO;Vera Susana Gavancha Magro;vera.magro@cm-marvao.pt;Técnica superior;NAO
+PORTALEGRE;Monforte;http://www.cm-monforte.pt;NAO;NAO;;;;NAO
+PORTALEGRE;Nisa;http://www.cm-nisa.pt;NAO;NAO;;;;NAO
+PORTALEGRE;Ponte de Sôr;http://www.cm-pontedesor.pt;NAO;NAO;;;;NAO
+PORTALEGRE;Portalegre;http://www.cm-portalegre.pt;SIM;NAO;Rute Saião Martins Calha;rute.calha@cm-portalegre.pt;Jurista;NAO
+PORTALEGRE;Sousel;http://www.cm-sousel.pt;NAO;NAO;;;;NAO
+PORTO;Amarante;http://www.cm-amarante.pt;SIM;NAO;Carla Afonso;carla.afonso@cm-amarante.pt;Chefe da Divisão Administrativa e de Recursos Humanos;NAO
+PORTO;Baião;http://www.cm-baiao.pt;SIM;NAO;Ana Paula Pinto Carneiro;anapaula@cm-baiao.pt;Técnica Superior;NAO
+PORTO;Felgueiras;http://www.cm-felgueiras.pt;NAO;NAO;;;;NAO
+PORTO;Gondomar;http://www.cm-gondomar.pt;SIM;NAO;Gisela Santos Ribeiro;rai@cm-gondomar.pt;Técnica Superior a exercer funções no Departamento Jurídico;NAO
+PORTO;Lousada;https://www.cm-lousada.pt/;NAO;NAO;;;;NAO
+PORTO;Maia;http://www.cm-maia.pt;SIM;NAO;Joaquim Acácio Belo Faustino;belo.faustino@cm-maia.pt;Diretor do Departamento de Recursos Humanos e Administração Geral;NAO
+PORTO;Marco de Canaveses;http://www.cm-marco-canaveses.pt;SIM;NAO;André Filipe Freitas Teixeira;andre.teixeira@cm-marco-canaveses.pt | arquivo.municipal@cm-marco-canaveses.pt;Técnico Superior de Arquivo;NAO
+PORTO;Matosinhos;http://www.cm-matosinhos.pt;SIM;NAO;Carlos Silva;rai@cm-matosinhos.pt;Chefe de Divisão Loja do Munícipe;NAO
+PORTO;Paços de Ferreira;http://www.cm-pacosdeferreira.pt;SIM;NAO;Maria Fernanda Ribeiro Monteiro;fernanda.monteiro@cm-pacosdeferreira.pt;Chefe de Divisão de Gestão Administrativa;NAO
+PORTO;Paredes;http://www.cm-paredes.pt;NAO;NAO;;;;NAO
+PORTO;Penafiel;http://www.cm-penafiel.pt;SIM;NAO;Alexandre José Magalhães Couto;alexandre.couto@cm-penafiel.pt;Chefe de Divisão de Gestão Urbanística;NAO
+PORTO;Porto;http://www.cm-porto.pt;SIM;https://opendata.porto.digital/;Paula Maria da Silva Ribeiro Pontes Alves Dantas;paulapontes@cm-porto.pt;Chefe de Divisão Municipal de Arquivo Geral;https://dados.cm-porto.pt
+PORTO;Póvoa de Varzim;http://www.cm-pvarzim.pt;NAO;NAO;;;;NAO
+PORTO;Santo Tirso;http://www.cm-stirso.pt;SIM;NAO;Isaura Mariana da Silva Almeida Gomes;mgomes@cm-stirso.pt;Diretora do Departamento Jurídico, Financeiro e da Transição Digital;NAO
+PORTO;Trofa;http://www.mun-trofa.pt;SIM;NAO;Maria da Graça Branco Nogueira de Sousa Monteiro;graca.nogueira@mun-trofa.pt;Chefe da Divisão de Atendimento e Modernização Administrativa;NAO
+PORTO;Valongo;http://www.cm-valongo.pt;SIM;NAO;José Amadeu Guedes de Paiva;jose.paiva@cm-valongo.pt;Diretor do Departamento Jurídico, Apoio a Munícipes e Recursos Humanos;NAO
+PORTO;Vila do Conde;http://www.cm-viladoconde.pt;NAO;NAO;;;;NAO
+PORTO;Vila Nova de Gaia;http://www.cm-gaia.pt;SIM;NAO;Rita Cristina Sousa Cabral;ritacabral@cm-gaia.pt;Chefe da Divisão de Atendimento e Administrativa;NAO
+SANTARÉM;Abrantes;http://www.cm-abrantes.pt;NAO;NAO;;;;NAO
+SANTARÉM;Alcanena;http://www.cm-alcanena.pt;NAO;NAO;;;;NAO
+SANTARÉM;Almeirim;http://www.cm-almeirim.pt;NAO;NAO;;;;NAO
+SANTARÉM;Alpiarça;http://www.cm-alpiarca.pt;NAO;NAO;;;;NAO
+SANTARÉM;Benavente;http://www.cm-benavente.pt;NAO;NAO;;;;NAO
+SANTARÉM;Cartaxo;http://www.cm-cartaxo.pt;SIM;NAO;Pedro Miguel Ferreira Reis;juridico@cm-cartaxo.pt;Vice-Presidente da Câmara Municipal;NAO
+SANTARÉM;Chamusca;http://www.cm-chamusca.pt;SIM;NAO;Celina Raquel Bacalhau de Moura;cmoura@cm-chamusca.pt;Técnico Superior;NAO
+SANTARÉM;Constância;http://www.cm-constancia.pt;NAO;NAO;;;;NAO
+SANTARÉM;Coruche;http://www.cm-coruche.pt;NAO;NAO;;;;NAO
+SANTARÉM;Entroncamento;http://www.cm-entroncamento.pt;SIM;NAO;Maria João Carvalho Barbosa;maria.barbosa@cm-entroncamento.pt;Técnica Superior;NAO
+SANTARÉM;Ferreira do Zêzere;http://www.cm-ferreiradozezere.pt;SIM;NAO;Dr. Tiago Alexandre Palaré Barros Pinto;rai@cm-ferreiradozezere.pt;Técnico Superior - Arquivista;NAO
+SANTARÉM;Mação;http://www.cm-macao.pt;SIM;NAO;Ana Luisa Morão Raposo Martins Proença;ana.proenca@cm-macao.pt;Técnica Superior - Arquivo;NAO
+SANTARÉM;Ourém;http://www.cm-ourem.pt;SIM;NAO;Eusébio Manuel Silva Monteiro;rai@mail.cm-ourem.pt;Chefe de Divisão;NAO
+SANTARÉM;Rio Maior;http://www.cm-riomaior.pt;SIM;NAO;Ana Carla da Silva Capitão;conformidade@cm-riomaior.pt;Chefe de Divisão;NAO
+SANTARÉM;Salvaterra de Magos;http://www.cm-salvaterrademagos.pt;SIM;NAO;Beatriz Sofia Jorge Tiago;beatriztiago@cm-salvaterrademagos.pt;Técnica Superior Jurista;NAO
+SANTARÉM;Santarém;http://www.cm-santarem.pt;NAO;NAO;;;;NAO
+SANTARÉM;Sardoal;http://www.cm-sardoal.pt;NAO;NAO;;;;NAO
+SANTARÉM;Tomar;http://www.cm-tomar.pt;SIM;NAO;Catarina Faria;catarinafaria@cm-tomar.pt;Técnica Superior de Arquivo;NAO
+SANTARÉM;Torres Novas;http://www.cm-torresnovas.pt;NAO;NAO;;;;NAO
+SANTARÉM;Vila Nova da Barquinha;http://www.cm-vnbarquinha.pt;NAO;NAO;;;;NAO
+SETÚBAL;Alcácer do Sal;http://www.cm-alcacerdosal.pt;NAO;NAO;;;;NAO
+SETÚBAL;Alcochete;http://www.cm-alcochete.pt;NAO;NAO;;;;NAO
+SETÚBAL;Almada;http://www.m-almada.pt;SIM;NAO;Otília Rosado;orosado@cma.m-almada.pt;Coordenadora dos Serviços de Arquivo;NAO
+SETÚBAL;Grândola;https://www.cm-grandola.pt/;NAO;NAO;;;;NAO
+SETÚBAL;Moita;http://www.cm-moita.pt;NAO;NAO;;;;NAO
+SETÚBAL;Montijo;http://www.mun-montijo.pt;NAO;NAO;;;;NAO
+SETÚBAL;Palmela;http://www.cm-palmela.pt;SIM;NAO;Carla Cristina dos Santos Espada;rai@cm-palmela.pt;não aplicável;NAO
+SETÚBAL;Santiago do Cacém;http://www.cm-santiagocacem.pt;NAO;NAO;;;;NAO
+SETÚBAL;Seixal;http://www.cm-seixal.pt;SIM;NAO;Maria Luzia Lopes Ferreira Machado;luzia.machado@cm-seixal.pt;Responsável pelo Acesso à Informação (RAI);NAO
+SETÚBAL;Sesimbra;http://www.cm-sesimbra.pt;NAO;NAO;;;;NAO
+SETÚBAL;Setúbal;http://www.mun-setubal.pt;SIM;NAO;Sofia Isabel Lopes Casas Novas;sofia.novas@mun-setubal.pt;Chefe de Divisão Administrativa Geral;NAO
+SETÚBAL;Sines;http://www.sines.pt;SIM;NAO;Cármen Isabel Amador Francisco;geral@mun-sines.pt;Coordenadora da Unidade de Atendimento e Gestão Documental;NAO
+VIANA DO CASTELO;Arcos de Valdevez;http://www.cmav.pt;NAO;NAO;;;;NAO
+VIANA DO CASTELO;Caminha;http://www.cm-caminha.pt;SIM;NAO;Helena Amorim;rai@cm-caminha.pt;Técnica Superior do Gabinete de Modernização e Controlo Interno;NAO
+VIANA DO CASTELO;Melgaço;http://www.cm-melgaco.pt;SIM;NAO;Elsa Maria Rodrigues Covêlo;arquivomunicipal@cm-melgaco.pt;Dirigente de 3.º grau do Gabinete de Gestão da Qualidade e Modernização Administrativa;NAO
+VIANA DO CASTELO;Monção;http://www.cm-moncao.pt;SIM;NAO;Daniela Patrícia Fernandes Gonçalves;dgoncalves@cm-moncao.pt;Técnica Superior - Jurista;NAO
+VIANA DO CASTELO;Paredes de Coura;http://www.cm-paredes-coura.pt;NAO;NAO;;;;NAO
+VIANA DO CASTELO;Ponte da Barca;http://www.cmpb.pt;NAO;NAO;;;;NAO
+VIANA DO CASTELO;Ponte de Lima;http://www.cm-pontedelima.pt;NAO;NAO;;;;NAO
+VIANA DO CASTELO;Valença;http://www.cm-valenca.pt;SIM;NAO;Paula Cristina Pinheiro Vasconcelos Mateus;pmateus@cm-valenca.pt;Chefe de Divisão Administrativa Geral;NAO
+VIANA DO CASTELO;Viana do Castelo;http://www.cm-viana-castelo.pt;NAO;NAO;;;;NAO
+VIANA DO CASTELO;Vila Nova de Cerveira;http://www.cm-vncerveira.pt;SIM;NAO;Ivone da Conceição Costa Marinho;daf@cm-vncerveira.pt;Chefe da Divisão Administrativa e Financeira;NAO
+VILA REAL;Alijó;http://www.cm-alijo.pt;SIM;NAO;Ana Bárbara Fonseca Alves;ana.alves@cm-alijo.pt;Técnico Superior;NAO
+VILA REAL;Boticas;http://www.cm-boticas.pt;NAO;NAO;;;;NAO
+VILA REAL;Chaves;http://www.chaves.pt;NAO;NAO;;;;NAO
+VILA REAL;Mondim de Basto;http://www.cm-mondimdebasto.pt;NAO;NAO;;;;NAO
+VILA REAL;Montalegre;http://www.cm-montalegre.pt;NAO;NAO;;;;NAO
+VILA REAL;Murça;http://www.cm-murca.pt;SIM;NAO;Marcelo Caetano Martins Delgado;gap@cm-murca.pt;Diretor de Departamento de Coordenação Geral;NAO
+VILA REAL;Peso da Régua;http://www.cm-pesoregua.pt;NAO;NAO;;;;NAO
+VILA REAL;Ribeira de Pena;http://www.cm-rpena.pt;NAO;NAO;;;;NAO
+VILA REAL;Sabrosa;http://www.cm-sabrosa.pt;NAO;NAO;;;;NAO
+VILA REAL;Santa Marta de Penaguião;http://www.cm-smpenaguiao.pt;SIM;NAO;Inês Nogueira Rebelo;ines.nogueira@cm-smpenaguiao.pt;Técnica Superior - Jurista;NAO
+VILA REAL;Valpaços;http://www.valpacos.pt;NAO;NAO;;;;NAO
+VILA REAL;Vila Pouca de Aguiar;http://www.cm-vpaguiar.pt;NAO;NAO;;;;NAO
+VILA REAL;Vila Real;http://www.cm-vilareal.pt;NAO;NAO;;;;NAO
+VISEU;Armamar;http://www.cm-armamar.pt;NAO;NAO;;;;NAO
+VISEU;Carregal do Sal;http://www.carregal-digital.pt;NAO;NAO;;;;NAO
+VISEU;Castro Daire;http://www.cm-castrodaire.pt;NAO;NAO;;;;NAO
+VISEU;Cinfães;http://www.cm-cinfaes.pt;NAO;NAO;;;;NAO
+VISEU;Lamego;http://www.cm-lamego.pt;SIM;NAO;Catarina da Cunha Antunes;catarina.antunes@cm-lamego.pt;Técnica Superior;NAO
+VISEU;Mangualde;http://www.cmmangualde.pt;NAO;NAO;;;;NAO
+VISEU;Moimenta da Beira;http://www.cm-moimenta.pt;NAO;NAO;;;;NAO
+VISEU;Mortágua;http://www.cm-mortagua.pt;NAO;NAO;;;;NAO
+VISEU;Nelas;http://www.cm-nelas.pt;NAO;NAO;;;;NAO
+VISEU;Oliveira de Frades;http://www.cm-ofrades.com;NAO;NAO;;;;NAO
+VISEU;Penalva do Castelo;http://www.cm-penalvadocastelo.pt/;NAO;NAO;;;;NAO
+VISEU;Penedono;http://www.cm-penedono.pt;NAO;NAO;;;;NAO
+VISEU;Resende;http://www.cm-resende.pt;NAO;NAO;;;;NAO
+VISEU;Santa Comba Dão;http://www.cm-santacombadao.pt;NAO;NAO;;;;NAO
+VISEU;São João da Pesqueira;http://www.sjpesqueira.pt;NAO;NAO;;;;NAO
+VISEU;São Pedro do Sul;http://www.cm-spsul.pt;SIM;NAO;António Miguel Perdigoto Girão;antonio.girao@cm-spsul.pt;Chefe de Divisão;NAO
+VISEU;Sátão;http://www.cm-satao.pt;NAO;NAO;;;;NAO
+VISEU;Sernancelhe;http://www.cm-sernancelhe.pt;NAO;NAO;;;;NAO
+VISEU;Tabuaço;http://www.cm-tabuaco.pt;NAO;NAO;;;;NAO
+VISEU;Tarouca;http://www.cm-tarouca.pt;NAO;NAO;;;;NAO
+VISEU;Tondela;http://www.cm-tondela.pt;NAO;NAO;;;;NAO
+VISEU;Vila Nova de Paiva;http://www.cm-vnpaiva.pt;NAO;NAO;;;;NAO
+VISEU;Viseu;http://www.cm-viseu.pt;NAO;NAO;;;;NAO
+VISEU;Vouzela;http://www.cm-vouzela.pt;NAO;NAO;;;;NAO
