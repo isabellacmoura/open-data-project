@@ -270,11 +270,28 @@
     </div>
 
     <!-- Carregar o widget Svelte -->
-    <script src="municipios-widget.umd.cjs?v=3"></script>
+    <script src="municipios-widget.umd.cjs?v=5"></script>
     <script>
-        // Inicializar o widget
-        new MunicipiosWidget.default({
-            target: document.getElementById('widget-container')
+        // Aguardar o DOM estar pronto
+        document.addEventListener('DOMContentLoaded', function() {
+            const container = document.getElementById('widget-container');
+            if (container && typeof MunicipiosWidget !== 'undefined') {
+                try {
+                    // O arquivo UMD já exporta a classe diretamente
+                    new MunicipiosWidget({
+                        target: container
+                    });
+                } catch (error) {
+                    console.error('Erro ao inicializar widget:', error);
+                    container.innerHTML = '<p>Erro ao carregar o mapa. Tente recarregar a página.</p>';
+                }
+            } else {
+                console.error('Widget ou container não encontrado');
+                console.log('Tipo de MunicipiosWidget:', typeof MunicipiosWidget);
+                if (container) {
+                    container.innerHTML = '<p>Erro ao carregar o widget. Verifique a conexão.</p>';
+                }
+            }
         });
     </script>
 
