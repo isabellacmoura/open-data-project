@@ -1,53 +1,38 @@
-<!DOCTYPE html>
-<html lang="pt-BR">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Mapa Interativo - Dados Abertos em Portugal</title>
+<!doctype html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+		
+		<link rel="modulepreload" href="/open-data-project/_app/immutable/entry/start.Ci-PVcJP.js">
+		<link rel="modulepreload" href="/open-data-project/_app/immutable/chunks/C_wL3WpW.js">
+		<link rel="modulepreload" href="/open-data-project/_app/immutable/chunks/Ar7RCcFa.js">
+		<link rel="modulepreload" href="/open-data-project/_app/immutable/chunks/gEP5jy-j.js">
+		<link rel="modulepreload" href="/open-data-project/_app/immutable/entry/app.DAlHQNtI.js">
+		<link rel="modulepreload" href="/open-data-project/_app/immutable/chunks/DsnmJJEf.js">
+		<link rel="modulepreload" href="/open-data-project/_app/immutable/chunks/DwxI3bpb.js">
+	</head>
+	<body data-sveltekit-preload-data="hover">
+		<div style="display: contents">
+			<script>
+				{
+					__sveltekit_gh98yd = {
+						base: "/open-data-project",
+						assets: "/open-data-project"
+					};
 
-    <!-- JS do build Svelte -->
-    <link rel="modulepreload" href="./_app/immutable/entry/start.DRcLa3vd.js">
-    <link rel="modulepreload" href="./_app/immutable/chunks/Da2FXiEx.js">
-    <link rel="modulepreload" href="./_app/immutable/chunks/Ar7RCcFa.js">
-    <link rel="modulepreload" href="./_app/immutable/chunks/gEP5jy-j.js">
-    <link rel="modulepreload" href="./_app/immutable/entry/app.D7bzbFYa.js">
-    <link rel="modulepreload" href="./_app/immutable/chunks/DsnmJJEf.js">
-    <link rel="modulepreload" href="./_app/immutable/chunks/DwxI3bpb.js">
+					const element = document.currentScript.parentElement;
 
-    <!-- CSS do build Svelte -->
-    <link rel="stylesheet" href="./_app/immutable/assets/0.bDzF2yEh.css">
-    <link rel="stylesheet" href="./_app/immutable/assets/2.Bh1-V1Kf.css">
-</head>
-<body>
-
-    <!-- Container para a app Svelte -->
-    <div id="app"></div>
-
-    <!-- Inicialização da app Svelte -->
-    <script type="module">
-        const element = document.getElementById('app');
-
-        Promise.all([
-            import("./_app/immutable/entry/start.DRcLa3vd.js"),
-            import("./_app/immutable/entry/app.D7bzbFYa.js")
-        ]).then(([kit, App]) => {
-            kit.start(App, element);
-        });
-    </script>
-
-    <!-- Carregamento dos dados CSV e GeoJSON via D3 -->
-    <script type="module">
-        import * as d3 from 'https://cdn.jsdelivr.net/npm/d3@7/dist/d3.min.js';
-
-        d3.csv("./municipios.csv").then(data => {
-            console.log("Municipios:", data);
-        });
-
-        d3.json("./PortugalM.geojson").then(data => {
-            console.log("GeoJSON:", data);
-        });
-    </script>
-
-</body>
+					Promise.all([
+						import("/open-data-project/_app/immutable/entry/start.Ci-PVcJP.js"),
+						import("/open-data-project/_app/immutable/entry/app.DAlHQNtI.js")
+					]).then(([kit, app]) => {
+						kit.start(app, element);
+					});
+				}
+			</script>
+		</div>
+	</body>
 </html>
+
 
