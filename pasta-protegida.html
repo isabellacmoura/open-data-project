@@ -270,12 +270,10 @@
     </div>
 
     <!-- Carregar o widget Svelte -->
-    <script type="module">
-        // Carregar o widget
-        import MunicipiosWidget from './municipios-widget.js?v=3';
-        
+    <script src="municipios-widget.umd.cjs?v=3"></script>
+    <script>
         // Inicializar o widget
-        new MunicipiosWidget({
+        new MunicipiosWidget.default({
             target: document.getElementById('widget-container')
         });
     </script>

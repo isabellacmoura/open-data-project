@@ -1,4 +1,4 @@
-let base = "";
+let base = "/open-data-project";
 let assets = base;
 const app_dir = "_app";
 const initial = { base, assets };

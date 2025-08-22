@@ -36,14 +36,14 @@ function _page($$payload, $$props) {
   let nome = "";
   let sugestoes = [];
   let selectedMunicipio = "";
-  $$payload.out.push(`<div class="dashboard-container svelte-1nrlwwx"><div class="search-section svelte-1nrlwwx"><h2 class="svelte-1nrlwwx">Dados nos municípios</h2> <div class="search-input-container svelte-1nrlwwx"><input type="text"${attr("value", nome)} placeholder="Nome do município..." class="search-input svelte-1nrlwwx"/> <button class="search-btn svelte-1nrlwwx">Pesquisar</button></div> `);
+  $$payload.out.push(`<div class="dashboard-container svelte-1kq6r5w"><div class="search-section svelte-1kq6r5w"><h2 class="svelte-1kq6r5w">Dados nos municípios</h2> <div class="search-input-container svelte-1kq6r5w"><input type="text"${attr("value", nome)} placeholder="Nome do município..." class="search-input svelte-1kq6r5w"/> <button class="search-btn svelte-1kq6r5w">Pesquisar</button></div> `);
   if (sugestoes.length > 0) {
     $$payload.out.push("<!--[-->");
     const each_array = ensure_array_like(sugestoes);
-    $$payload.out.push(`<ul class="sugestoes svelte-1nrlwwx"><!--[-->`);
+    $$payload.out.push(`<ul class="sugestoes svelte-1kq6r5w"><!--[-->`);
     for (let $$index = 0, $$length = each_array.length; $$index < $$length; $$index++) {
       let sugestao = each_array[$$index];
-      $$payload.out.push(`<li class="svelte-1nrlwwx">${escape_html(sugestao.MUNICIPIO)}</li>`);
+      $$payload.out.push(`<li class="svelte-1kq6r5w">${escape_html(sugestao.MUNICIPIO)}</li>`);
     }
     $$payload.out.push(`<!--]--></ul>`);
   } else {
@@ -53,7 +53,7 @@ function _page($$payload, $$props) {
   {
     $$payload.out.push("<!--[!-->");
   }
-  $$payload.out.push(`<!--]--></div> <div class="map-section svelte-1nrlwwx">`);
+  $$payload.out.push(`<!--]--></div> <div class="map-section svelte-1kq6r5w">`);
   InteractiveMap($$payload, { selectedMunicipio });
   $$payload.out.push(`<!----></div></div>`);
   pop();
