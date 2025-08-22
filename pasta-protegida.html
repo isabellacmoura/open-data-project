@@ -269,30 +269,7 @@
         </div>
 
         <div class="app-section">
-            <div id="app" class="app-container"></div>
-
-            <script type="module">
-              import { start } from './_app/immutable/entry/start.DfDF2iQ3.js';
-              
-              start({
-                target: document.getElementById('app')
-              });
-            </script>
-
-            <script>
-              // Carregar dados com D3
-              d3.csv("/open-data-project/municipios.csv").then(function(data) {
-                console.log("Municipios:", data);
-              }).catch(function(error) {
-                console.error("Erro ao carregar CSV:", error);
-              });
-
-              d3.json("/open-data-project/PortugalM.geojson").then(function(data) {
-                console.log("GeoJSON:", data);
-              }).catch(function(error) {
-                console.error("Erro ao carregar GeoJSON:", error);
-              });
-            </script>
+            <div id="widget-container" class="app-container"></div>
         </div>
     </div>
 
