@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Pasta Protegida - Dados Abertos em Portugal</title>
+    <base href="/open-data-project/">
     <!-- JS do build Svelte -->
     <link rel="modulepreload" href="./_app/immutable/entry/start.Ci-PVcJP.js">
     <link rel="modulepreload" href="./_app/immutable/chunks/C_wL3WpW.js">
@@ -273,12 +274,12 @@
             <div id="app" class="app-container"></div>
 
             <script type="module">
-  import { start } from './_app/immutable/entry/start.Ci-PVcJP.js';
-  
-  start({
-    target: document.getElementById('app')
-  });
-</script>
+              import { start } from '/open-data-project/_app/immutable/entry/start.Ci-PVcJP.js';
+              
+              start({
+                target: document.getElementById('app')
+              });
+            </script>
 
             <script>
               // Carregar dados com D3
