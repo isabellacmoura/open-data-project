@@ -270,27 +270,33 @@
     </div>
 
     <!-- Carregar o widget Svelte -->
-    <script src="municipios-widget.umd.cjs?v=6"></script>
-    <script>
+    <script type="module">
+        import MunicipiosWidget from './municipios-widget.js';
+        
         // Aguardar o DOM estar pronto
         document.addEventListener('DOMContentLoaded', function() {
             const container = document.getElementById('widget-container');
-            if (container && typeof MunicipiosWidget !== 'undefined') {
+            if (container) {
                 try {
-                    // O arquivo UMD já exporta a classe diretamente
-                    new MunicipiosWidget({
-                        target: container
+                    // Criar o widget com contexto adequado
+                    const widget = new MunicipiosWidget({
+                        target: container,
+                        props: {}
                     });
+                    
+                    // Garantir que o widget seja limpo quando necessário
+                    window.addEventListener('beforeunload', () => {
+                        if (widget && widget.$destroy) {
+                            widget.$destroy();
+                        }
+                    });
+                    
                 } catch (error) {
                     console.error('Erro ao inicializar widget:', error);
-                    container.innerHTML = '<p>Erro ao carregar o mapa. Tente recarregar a página.</p>';
+                    container.innerHTML = '<p>Erro ao carregar o mapa. Recarregue a página.</p>';
                 }
             } else {
-                console.error('Widget ou container não encontrado');
-                console.log('Tipo de MunicipiosWidget:', typeof MunicipiosWidget);
-                if (container) {
-                    container.innerHTML = '<p>Erro ao carregar o widget. Verifique a conexão.</p>';
-                }
+                console.error('Container não encontrado');
             }
         });
     </script>
