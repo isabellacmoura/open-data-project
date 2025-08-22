@@ -1,0 +1,1 @@
+import"../chunks/DsnmJJEf.js";import"../chunks/CX4gMUxU.js";import{o,q as s,i as f,k as l,m,n as d}from"../chunks/gEP5jy-j.js";function c(i,n,a,t,v){o&&s();var e=n.$$slots?.[a],r=!1;e===!0&&(e=n.children,r=!0),e===void 0||e(i,r?()=>t:t)}var u=f('<main class="main svelte-rckyv0"><!></main>');function y(i,n){var a=u(),t=m(a);c(t,n,"default",{}),d(a),l(i,a)}export{y as component};
