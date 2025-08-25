@@ -1,0 +1,565 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pasta Partilhada - Dados Abertos em Portugal</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            background-color: white;
+            font-family: Arial, sans-serif;
+            color: black;
+            min-height: 100vh;
+            position: relative;
+        }
+
+        /* Logo no canto superior esquerdo */
+        .logo-top-left {
+            position: fixed;
+            top: 20px;
+            left: 40px;
+            font-family: 'BaiJamjuree', sans-serif;
+            font-weight: 400;
+            font-size: 18px;
+            color: #000;
+            text-align: left;
+            line-height: 1.2;
+            z-index: 1000;
+        }
+
+        .logo-top-left .line1 {
+            display: block;
+            font-weight: 400;
+        }
+
+        .logo-top-left .line2 {
+            display: block;
+            font-weight: 700;
+        }
+
+        .logo-top-left .line3 {
+            display: block;
+            font-weight: 400;
+        }
+
+        /* Menu no rodapé */
+        .footer-menu {
+            position: fixed;
+            bottom: 20px;
+            left: 40px;
+            font-family: 'BaiJamjuree', sans-serif;
+            font-weight: 400;
+            font-size: 14px;
+            color: #000;
+            text-align: left;
+            line-height: 1.4;
+            z-index: 1000;
+        }
+
+        .footer-menu a {
+            display: inline;
+            color: #000;
+            text-decoration: underline;
+            margin: 0 5px;
+            transition: opacity 0.2s ease;
+        }
+
+        .footer-menu a:hover {
+            opacity: 0.7;
+        }
+
+        /* Rodapé */
+        .footer {
+            position: fixed;
+            bottom: 20px;
+            left: 50%;
+            transform: translateX(-50%);
+            font-family: 'BaiJamjuree', sans-serif;
+            font-weight: 400;
+            font-size: 14px;
+            color: #000;
+            text-align: center;
+            line-height: 1.4;
+            z-index: 1000;
+        }
+
+        /* Conteúdo principal */
+        .main-content {
+            padding: 80px 40px 100px 40px;
+            display: flex;
+            gap: 40px;
+            align-items: flex-start;
+        }
+
+        .content-section {
+            position: relative;
+            margin-bottom: 40px;
+            margin-top: 0;
+            flex-shrink: 0;
+        }
+
+        .folder-svg {
+            width: 400px;
+            height: 300px;
+            position: absolute;
+            left: 50px;
+            top: -198px;
+            z-index: 10;
+        }
+
+        .text-container {
+            display: flex;
+            justify-content: flex-start;
+            margin-top: 20px;
+            margin-left: -18px;
+        }
+
+        .text-box {
+            padding: 15px;
+            max-width: 400px;
+            font-size: 14px;
+            line-height: 1.4;
+            font-family: Arial, sans-serif;
+            margin-top: 0;
+        }
+
+        /* Layout das duas boxes */
+        .boxes-container {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 40px;
+            margin-top: 40px;
+            width: 100%;
+        }
+
+        .box {
+            background-color: white;
+            border: 1px solid #333;
+            border-radius: 8px;
+            padding: 20px;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+        }
+
+        .box-title {
+            font-family: Arial, sans-serif;
+            font-size: 18px;
+            font-weight: bold;
+            margin-bottom: 20px;
+            color: #333;
+            text-align: center;
+        }
+
+        .table-box {
+            background-color: white;
+            border: 1px solid #ddd;
+            border-radius: 4px;
+            padding: 15px;
+            max-height: 300px;
+            overflow-y: auto;
+        }
+
+        .table-box::-webkit-scrollbar {
+            width: 8px;
+        }
+
+        .table-box::-webkit-scrollbar-track {
+            background: #f1f1f1;
+            border-radius: 4px;
+        }
+
+        .table-box::-webkit-scrollbar-thumb {
+            background: #888;
+            border-radius: 4px;
+        }
+
+        .table-box::-webkit-scrollbar-thumb:hover {
+            background: #555;
+        }
+
+        .data-table {
+            width: 100%;
+            border-collapse: collapse;
+            font-family: Arial, sans-serif;
+            font-size: 14px;
+        }
+
+        .data-table th {
+            background-color: #f8f9fa;
+            padding: 12px 8px;
+            text-align: left;
+            font-weight: bold;
+            border-bottom: 2px solid #333;
+        }
+
+        .data-table td {
+            padding: 10px 8px;
+            border-bottom: 1px solid #ddd;
+        }
+
+        .data-table tr:hover {
+            background-color: #f5f5f5;
+        }
+
+        .data-table a {
+            color: #0066cc;
+            text-decoration: none;
+            transition: color 0.2s ease;
+        }
+
+        .data-table a:hover {
+            color: #003366;
+            text-decoration: underline;
+        }
+
+        .scroll-indicator {
+            text-align: center;
+            color: #666;
+            font-size: 12px;
+            margin-top: 10px;
+            font-style: italic;
+        }
+
+        /* Estilos para os eventos de hackathon - design minimalista */
+        .events-container {
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+            padding: 15px;
+            background-color: white;
+            min-height: 150px;
+        }
+
+        .event-card {
+            position: relative;
+            padding: 10px;
+            background-color: #f8f9fa;
+            border-radius: 6px;
+            border: 1px solid #e0e0e0;
+            transition: all 0.3s ease;
+        }
+
+        .event-card.previous {
+            opacity: 0.7;
+            transform: scale(0.85);
+            background-color: #f1f3f4;
+            border-color: #d0d0d0;
+        }
+
+        .event-card.current {
+            opacity: 1;
+            transform: scale(1.05);
+            background-color: white;
+            border: 2px solid #9cce8e;
+            box-shadow: 0 4px 12px rgba(156, 206, 142, 0.2);
+        }
+
+        .event-card.next {
+            opacity: 0.8;
+            transform: scale(0.9);
+            background-color: #f1f3f4;
+            border-color: #d0d0d0;
+        }
+
+        .event-date-oval {
+            position: absolute;
+            bottom: 8px;
+            right: 10px;
+            background-color: white;
+            color: #333;
+            padding: 3px 8px;
+            border-radius: 12px;
+            font-size: 10px;
+            font-weight: 600;
+            border: 1px solid #333;
+            min-width: 45px;
+            text-align: center;
+        }
+
+        .event-content {
+            position: relative;
+            padding-right: 65px;
+            padding-bottom: 5px;
+        }
+
+        .event-title-bold {
+            font-size: 12px;
+            font-weight: 700;
+            margin-bottom: 3px;
+            color: #333;
+            line-height: 1.2;
+        }
+
+        .event-description {
+            font-size: 9px;
+            line-height: 1.1;
+            color: #666;
+            font-weight: 400;
+            max-height: 25px;
+            overflow: hidden;
+            display: -webkit-box;
+            -webkit-line-clamp: 2;
+            -webkit-box-orient: vertical;
+            margin-bottom: 3px;
+        }
+
+        .event-status {
+            font-size: 9px;
+            font-weight: 600;
+            color: #9cce8e;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+            margin-top: 3px;
+        }
+
+        /* Estilos para o bubble chart */
+        .bubble-chart-container {
+            padding: 20px;
+            background-color: #f8f9fa;
+            border-radius: 8px;
+            min-height: 300px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .bubble-chart {
+            position: relative;
+            width: 100%;
+            height: 280px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .bubble {
+            position: absolute;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: white;
+            font-weight: bold;
+            font-size: 12px;
+            text-align: center;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            box-shadow: 0 2px 6px rgba(0,0,0,0.15);
+        }
+
+        .bubble:hover {
+            transform: scale(1.1);
+            box-shadow: 0 6px 12px rgba(0,0,0,0.3);
+        }
+
+        .bubble span {
+            padding: 5px;
+            word-wrap: break-word;
+            line-height: 1.2;
+        }
+
+        /* Tamanhos das bolas em ordem decrescente - layout orgânico sem sobreposição */
+        .bubble-1 {
+            width: 140px;
+            height: 140px;
+            background: #9cce8e;
+            top: 30%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            font-size: 16px;
+        }
+
+        .bubble-2 {
+            width: 110px;
+            height: 110px;
+            background: #b2d3b2;
+            top: 70%;
+            left: 25%;
+            transform: translate(-50%, -50%);
+            font-size: 14px;
+        }
+
+        .bubble-3 {
+            width: 90px;
+            height: 90px;
+            background: #c8e0c8;
+            top: 70%;
+            right: 25%;
+            transform: translate(50%, -50%);
+            font-size: 13px;
+        }
+
+        .bubble-4 {
+            width: 70px;
+            height: 70px;
+            background: #d4e8d4;
+            top: 50%;
+            left: 15%;
+            transform: translate(-50%, -50%);
+            font-size: 12px;
+        }
+
+        .bubble-5 {
+            width: 50px;
+            height: 50px;
+            background: #e0f0e0;
+            top: 50%;
+            right: 15%;
+            transform: translate(50%, -50%);
+            font-size: 11px;
+        }
+
+        /* Tooltip */
+        .bubble::after {
+            content: attr(data-tooltip);
+            position: absolute;
+            bottom: -40px;
+            left: 50%;
+            transform: translateX(-50%);
+            background: rgba(0, 0, 0, 0.8);
+            color: white;
+            padding: 8px 12px;
+            border-radius: 6px;
+            font-size: 11px;
+            white-space: nowrap;
+            opacity: 0;
+            pointer-events: none;
+            transition: opacity 0.3s ease;
+            z-index: 1000;
+        }
+
+        .bubble:hover::after {
+            opacity: 1;
+        }
+    </style>
+</head>
+<body>
+    <!-- Logo no canto superior esquerdo -->
+    <div class="logo-top-left">
+        <span class="line1">Dados</span>
+        <span class="line2">Abertos em</span>
+        <span class="line3">Portugal</span>
+    </div>
+
+    <!-- Menu no rodapé -->
+    <div class="footer-menu">
+        <a href="index.html">Voltar</a> / <a href="about-project.html">Sobre o projeto</a> / <a href="#referencias">Referências</a> / <a href="#contacto">Contacto</a>
+    </div>
+
+    <!-- Rodapé -->
+    <div class="footer">
+        Projeto que incentiva o uso de dados abertos na<br>
+        cobertura de políticas públicas em Portugal
+    </div>
+
+    <div class="main-content">
+        <div class="content-section">
+            <div class="folder-svg">
+                <svg xmlns="http://www.w3.org/2000/svg" version="1.1" viewBox="0 0 600 400" width="400" height="300">
+                    <defs>
+                        <style>
+                            .st0 { fill: #9cce8e; }
+                            .st11 { fill: #b2d3b2; }
+                        </style>
+                    </defs>
+                    <g>
+                        <path class="st0" d="M106.42,212.97v-6.92c0-4.62,1.22-6.92,3.65-6.92h21.89c1.22,0,2.43,1.15,3.65,3.46l5.47,10.39h41.96c2.43,0,3.65,2.31,3.65,6.92v34.62c0,4.62-1.22,6.92-3.65,6.92h-72.98c-2.43,0-3.65-2.31-3.65-6.92v-41.55Z"/>
+                        <path class="st11" d="M106.42,212.97h34.67l-5.47-10.39c-1.22-2.31-2.43-3.46-3.65-3.46h-21.89c-2.43,0-3.65,2.31-3.65,6.92v6.92Z"/>
+                    </g>
+                </svg>
+            </div>
+            <div class="text-container">
+                <div class="text-box">
+                    ========================<br>
+                    <span style="background-color: #9cce8e;">Pasta partilhada</span>  é um projeto<br>
+                    de curadoria jornalística que<br>
+                    procura identificar ausências de <br>
+                    informação em formato de dataset<br>
+                    no contexto português<br>
+                    ========================
+                </div>
+            </div>
+        </div>
+
+        <div class="boxes-container">
+            <!-- Box Hackathon -->
+            <div class="box">
+                <div class="box-title">HACKATHON</div>
+                <div class="events-container">
+                    <!-- Evento anterior -->
+                    <div class="event-card previous">
+                        <div class="event-date-oval">26 FEV</div>
+                        <div class="event-content">
+                            <div class="event-title-bold">Uma cidade construída com dados</div>
+                            <div class="event-description">NOVA FCSH - Workshop sobre construção de cidades inteligentes através de dados abertos e análise urbana.</div>
+                        </div>
+                    </div>
+                    
+                    <!-- Evento atual (em destaque) -->
+                    <div class="event-card current">
+                        <div class="event-date-oval">27 MAR</div>
+                        <div class="event-content">
+                            <div class="event-title-bold">Dados abertos governamentais: desafios e aplicações</div>
+                            <div class="event-description">UMinho (Instituto de Ciências Sociais) - Conferência sobre os desafios e aplicações práticas dos dados abertos governamentais em Portugal.</div>
+                            <div class="event-status">PRÓXIMO EVENTO</div>
+                        </div>
+                    </div>
+                    
+                    <!-- Evento seguinte -->
+                    <div class="event-card next">
+                        <div class="event-date-oval">A AGENDAR</div>
+                        <div class="event-content">
+                            <div class="event-title-bold">Jornalismo de dados em Portugal: realidades e perspetivas</div>
+                            <div class="event-description">Workshop sobre o estado atual e futuro do jornalismo de dados em Portugal, com foco em ferramentas e metodologias.</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Box Jornalismo de dados nos média -->
+            <div class="box">
+                <div class="box-title">JORNALISMO DE DADOS NOS MEDIA</div>
+                <div class="table-box">
+                    <table class="data-table">
+                        <thead>
+                            <tr>
+                                <th>Artigos</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>Sem data - <a href="https://sondagens.rr.pt/" target="_blank">A Sondagem das Sondagens</a></td>
+                            </tr>
+                            <tr>
+                                <td>Julho de 2025 - <a href="https://www.publico.pt/interactivos/curso-certo/" target="_blank">Qual é o curso certo para ti? Faz o teste</a></td>
+                            </tr>
+                            <tr>
+                                <td>Maio de 2025 - <a href="https://rr.pt/especial/politica/2025/05/30/mais-de-11-milhoes-de-votos-desperdicados-nas-eleicoes-um-em-cada-cinco-nao-elegeu-deputados/427437/" target="_blank">Mais de 1,1 milhões de votos "desperdiçados" nas eleições. Um em cada cinco não elegeu deputados</a></td>
+                            </tr>
+                            <tr>
+                                <td>Maio de 2025 - <a href="https://www.publico.pt/interactivos/ventos-eleitorais-2025/" target="_blank">Corrente laranja, furacão populista — e uma esquerda que nem a brisa chegou</a></td>
+                            </tr>
+                            <tr>
+                                <td>Abril de 2025 - <a href="https://www.publico.pt/interactivos/faca-seu-ranking-escolas-2024/" target="_blank">Ranking das Escolas</a></td>
+                            </tr>
+                            <tr>
+                                <td>Maio de 2024 - <a href="https://www.publico.pt/2024/05/30/politica/noticia/sete-euros-doados-partidos-europa-vai-direita-radical-2092300" target="_blank">Um em cada sete euros doados aos partidos na Europa vai para a direita radical</a></td>
+                            </tr>
+                            <tr>
+                                <td>Fevereiro de 2024 - <a href="https://bombarelogio.divergente.pt/" target="_blank">A bomba-relógio da abstenção</a></td>
+                            </tr>
+                            <tr>
+                                <td>Março de 2022 - <a href="https://www.publico.pt/interactivo/ditadura-democracia-portugal" target="_blank">Como evoluiu o país da ditadura à democracia</a></td>
+                            </tr>
+                        </tbody>
+                    </table>
+                    <div class="scroll-indicator">
+                        ↓ 
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
