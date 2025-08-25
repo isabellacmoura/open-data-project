@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Widget Municípios de Portugal</title>
+    <link rel="stylesheet" href="dados-widget.css">
+    <style>
+        body {
+            margin: 0;
+            padding: 20px;
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+            background-color: #f8f9fa;
+        }
+        
+        #widget-container {
+            background: white;
+            border-radius: 8px;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+            padding: 20px;
+            min-height: 600px;
+        }
+    </style>
+</head>
+<body>
+    <div id="widget-container"></div>
+    
+    <script src="dados-widget.iife.js"></script>
+    <script>
+        // Função para inicializar o widget com delay
+        function initWidget() {
+            try {
+                            if (window.DadosWidget) {
+                new window.DadosWidget({
+                    target: document.getElementById('widget-container')
+                });
+                    console.log('Widget Svelte inicializado com sucesso!');
+                } else {
+                    console.error('Widget não encontrado');
+                    document.getElementById('widget-container').innerHTML = 
+                        '<p style="color: red;">Erro: Widget não encontrado</p>';
+                }
+            } catch (error) {
+                console.error('Erro ao inicializar widget:', error);
+                document.getElementById('widget-container').innerHTML = 
+                    '<p style="color: red;">Erro ao inicializar widget: ' + error.message + '</p>';
+            }
+        }
+
+        // Aguardar o DOM estar pronto e dar um delay adicional
+        document.addEventListener('DOMContentLoaded', function() {
+            // Aguardar 500ms para garantir que tudo carregou
+            setTimeout(initWidget, 500);
+        });
+
+        // Fallback: se DOMContentLoaded já aconteceu
+        if (document.readyState === 'loading') {
+            document.addEventListener('DOMContentLoaded', function() {
+                setTimeout(initWidget, 500);
+            });
+        } else {
+            setTimeout(initWidget, 500);
+        }
+    </script>
+</body>
+</html>
