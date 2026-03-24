@@ -433,6 +433,39 @@
         .bubble:hover::after {
             opacity: 1;
         }
+
+        @media (max-width: 768px) {
+            .logo-top-left {
+                font-size: 14px;
+                left: 16px;
+                top: 16px;
+            }
+
+            .footer {
+                display: none;
+            }
+
+            .footer-menu {
+                font-size: 12px;
+                left: 16px;
+                bottom: 12px;
+            }
+
+            .main-content {
+                flex-direction: column;
+                padding: 90px 16px 60px 16px;
+                gap: 16px;
+            }
+
+            .content-section {
+                display: none;
+            }
+
+            .boxes-container {
+                grid-template-columns: 1fr;
+                margin-top: 0;
+            }
+        }
     </style>
 </head>
 <body>

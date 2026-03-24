@@ -222,6 +222,46 @@
             display: none;
         }
 
+        @media (max-width: 768px) {
+            .logo-top-left {
+                font-size: 14px !important;
+                left: 16px !important;
+                top: 16px !important;
+            }
+
+            .footer {
+                display: none;
+            }
+
+            .footer-menu {
+                font-size: 12px;
+                left: 16px;
+                bottom: 12px;
+            }
+
+            .main-content {
+                flex-direction: column;
+                padding: 90px 0 60px 0;
+                gap: 16px;
+            }
+
+            .content-section {
+                display: none;
+            }
+
+            .app-section {
+                margin-left: 0;
+                width: 100%;
+            }
+
+            .app-container {
+                margin: 0 !important;
+                clip-path: none !important;
+                width: 100%;
+            }
+
+            /* D3 widget responsive — handled via dados-widget.css media queries */
+        }
     </style>
 </head>
 <body>
